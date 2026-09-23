@@ -1,0 +1,7 @@
+Component_Type,Brand,Full_Model_Name,Price,Cores,Threads,TDP_W,CPU_Mark,Price_per_Mark,Gaming_Adv_1080p_Pct,Gaming_Adv_1440p_Pct,Gaming_Adv_4K_Pct,Notes
+CPU,AMD,Ryzen 7 9800X3D,449.00,8,16,120,39977,0.011,24,6,2,Best-in-class gaming CPU (3D V-Cache); CPU_Mark understates its real-world gaming performance. Gaming_Adv columns = % faster than the 285K at each resolution (1080p is hard benchmark data; 1440p/4K are estimated from reviewer and community consensus, not a single formal test)
+CPU,Intel,Core Ultra 9 285K,579.00,24,24,125,67300,0.009,,,,Wins CPU_Mark (multi-core work) but loses in real 1080p gaming benchmarks vs the 9800X3D. Baseline for the Gaming_Adv columns above
+CPU,AMD,Ryzen 7 9700X,303.00,8,16,65,37049,0.008,,,,Resolution-scaling data not yet gathered for this tier - stretch goal
+CPU,Intel,Core Ultra 7 265K,315.00,20,20,125,58678,0.005,,,,Resolution-scaling data not yet gathered for this tier - stretch goal
+CPU,AMD,Ryzen 5 7600,199.00,6,12,65,26977,0.007,,,,Resolution-scaling data not yet gathered for this tier - stretch goal
+CPU,Intel,Core i5-14600K,210.00,14,20,125,38449,0.005,,,,Resolution-scaling data not yet gathered for this tier - stretch goal
