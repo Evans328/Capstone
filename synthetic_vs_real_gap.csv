@@ -1,0 +1,4 @@
+Metric_Type,Resolution,Nvidia_Lead_Pct,Source,Explanation
+Synthetic benchmark (PassMark G3D Mark),General composite score,19,PassMark videocardbenchmark.net,"A blended score across many workload types (DirectX 9-12, OpenGL, compute, 2D) - not gaming-specific"
+Real-world gaming average,1440p,5,TechSpot 55-game benchmark,"Actual measured FPS across 55 real games, mostly standard rasterization work"
+Real-world gaming average,4K,5,TechSpot 55-game benchmark,"Same 55-game benchmark - the gap stays small even at the more demanding resolution"

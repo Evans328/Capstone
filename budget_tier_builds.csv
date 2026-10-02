@@ -1,0 +1,13 @@
+Budget_Target,Strategy,CPU,GPU,CPU_Price,GPU_Price,Total_Cost,CPU_Mark,GPU_G3D_Mark,Reasoning
+$800,Balanced,Ryzen 5 7600,Radeon RX 7800 XT,199.00,519.99,718.99,26977,24207,"Strong-enough CPU for 1080p plus the best-value GPU available"
+$800,Max-GPU,Ryzen 5 7600,GeForce RTX 4070,199.00,589.99,788.99,26977,26959,"Cheapest CPU on the list frees up the most budget for raw GPU power"
+"$1,200",Balanced,Ryzen 7 9800X3D,Radeon RX 7900 XT,449.00,699.99,1148.99,39977,28900,"Best gaming CPU locked in first so it never bottlenecks the GPU at 1080p"
+"$1,200",Max-GPU,Ryzen 5 7600,GeForce RTX 4070 Ti,199.00,849.99,1048.99,26977,31570,"Higher raw GPU Mark than the Balanced pick, but risks bottlenecking at 1080p"
+"$1,600",Balanced,Ryzen 7 9800X3D,GeForce RTX 4070 Ti,449.00,849.99,1298.99,39977,31570,"Corrected pick - beats the originally-listed RX 7900 XTX on both price and performance"
+"$1,600",Max-GPU,Ryzen 5 7600,GeForce RTX 5070 Ti,199.00,1199.99,1398.99,26977,32367,"Highest GPU Mark achievable at this budget, cheap CPU again"
+"$2,000",Balanced,Ryzen 7 9800X3D,GeForce RTX 5080,449.00,1500.00,1949.00,39977,35900,"Best CPU plus the single strongest GPU in the whole dataset"
+"$2,000",Max-GPU,Ryzen 5 7600,GeForce RTX 5080,199.00,1500.00,1699.00,26977,35900,"Same GPU as Balanced, but cheaper CPU leaves $250 unspent - no better GPU exists to spend it on"
+"$2,300",Balanced,Ryzen 7 9800X3D,GeForce RTX 5080,449.00,1500.00,1949.00,39977,35900,"Identical to the $2,000 tier - GPU ceiling reached, extra budget has nowhere to go in CPU/GPU"
+"$2,300",Max-GPU,Ryzen 5 7600,GeForce RTX 5080,199.00,1500.00,1699.00,26977,35900,"Same GPU ceiling reached even cheaper - $600 would be left unspent on CPU/GPU alone"
+"$2,600 (actual build)",Balanced,Ryzen 7 9800X3D,Radeon RX 9070 XT,449.00,799.50,1248.50,39977,27183,"My choice - deliberately passed on the RTX 5080 to fund cooling, RAM, and storage instead"
+"$2,600 (actual build)",Max-GPU,Ryzen 5 7600,GeForce RTX 5080,199.00,1500.00,1699.00,26977,35900,"What max-GPU-only optimization would pick - highest possible GPU Mark, but a weak CPU would bottleneck it badly at 1080p"

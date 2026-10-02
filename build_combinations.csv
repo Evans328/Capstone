@@ -1,0 +1,5 @@
+Build_Tier,CPU,GPU,CPU_Price,GPU_Price,Total_CPU_GPU_Cost,CPU_Mark,GPU_G3D_Mark,Notes
+Current (2019 baseline),Ryzen 7 3800X,RTX 2060 Super,329.00,399.00,728.00,24463,16500,"User's actual current system - no 3D V-Cache, pre-RTX 40/50 series"
+Budget rebuild,Ryzen 5 7600,RX 9060 XT (16GB),199.00,430.00,629.00,26977,20088,Cheapest modern pairing that still clearly beats the 2019 baseline on both fronts
+Mid-range rebuild,Ryzen 7 9700X,Radeon RX 7800 XT,303.00,519.99,822.99,37049,24207,Balanced step-up - solid 1440p gaming without reaching flagship pricing
+High-end (the user's new build),Ryzen 7 9800X3D,RX 9070 XT,449.00,799.50,1248.50,39977,27183,User's actual chosen build - best gaming CPU available paired with best current-gen AMD value GPU
