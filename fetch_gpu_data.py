@@ -12,7 +12,7 @@ import pandas as pd
 from datetime import datetime
 
 # Source: mirrors TechPowerUp's GPU database (Apache 2.0 licensed)
-DATA_URL = "https://raw.githubusercontent.com/RightNow-AI/RightNow-GPU-Database/main/data/all-gpus.json"
+
 
 # Backup mirror on Hugging Face, in case the GitHub URL ever moves
 BACKUP_URL = "https://huggingface.co/datasets/Jr23xd23/gpu-database/raw/main/data/all-gpus.json"
