@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="CapstoneSQL.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1447"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="gpu_metadata_clean" custom_title="0" dock_id="1" table="4,18:maingpu_metadata_clean"/><dock_state state="000000ff00000000fd0000000100000002000005b400000389fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000000005b40000011700ffffff000005b40000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="gpu_metadata_clean" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="207"/><column index="2" value="55"/><column index="3" value="49"/><column index="4" value="68"/><column index="5" value="85"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="gpu_metadata_raw" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="207"/><column index="2" value="66"/><column index="3" value="53"/><column index="4" value="69"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="gpu_price_history_clean" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="207"/><column index="2" value="87"/><column index="3" value="82"/><column index="4" value="79"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="gpu_price_history_raw" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="71"/><column index="2" value="207"/><column index="3" value="81"/><column index="4" value="79"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="hardware_data" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="108"/><column index="2" value="55"/><column index="3" value="159"/><column index="4" value="113"/><column index="5" value="75"/><column index="6" value="75"/><column index="7" value="129"/><column index="8" value="63"/><column index="9" value="67"/><column index="10" value="98"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">SELECT Brand, ROUND(AVG(Price_per_Mark), 4) AS avg_price_per_mark
+FROM hardware_data
+GROUP BY Brand;</sql><sql name="SQL 2">SELECT Full_Model_Name, Brand, Current_Street_Price, VRAM_GB, Price_per_Mark
+FROM hardware_data
+ORDER BY Price_per_Mark ASC
+LIMIT 5;</sql><sql name="SQL 3">SELECT Full_Model_Name, Brand, Current_Street_Price, VRAM_GB, Price_per_Mark
+FROM hardware_data
+WHERE Current_Street_Price &lt; 500
+ORDER BY Price_per_Mark ASC;</sql><sql name="SQL 4">DROP TABLE hardware_data;</sql><sql name="SQL 5">CREATE TABLE hardware_data (
+    Component_Type TEXT,
+    Brand TEXT,
+    Full_Model_Name TEXT,
+    Series_Generation INTEGER,
+    Suffix_Type TEXT,
+    MSRP_Price REAL,
+    Current_Street_Price REAL,
+    VRAM_GB INTEGER,
+    G3D_Mark INTEGER,
+    Price_per_Mark REAL
+	);</sql><sql name="SQL 6">SELECT * FROM hardware_data;</sql><sql name="Chart info python">INSERT INTO hardware_data VALUES
+('GPU','Nvidia','GeForce RTX 5080',50,'None',999,1500.00,16,35900,0.042),
+('GPU','AMD','Radeon RX 7900 XTX',79,'XTX',999,999.00,24,31100,0.032),
+('GPU','Nvidia','GeForce RTX 5070 Ti',50,'Ti',749,1199.99,16,32367,0.037),
+('GPU','AMD','Radeon RX 9070 XT',90,'XT',599,799.50,16,27183,0.029),
+('GPU','Nvidia','GeForce RTX 5070',50,'None',549,979.65,12,28679,0.034),
+('GPU','AMD','Radeon RX 9070',90,'None',549,689.99,16,26166,0.026),
+('GPU','Nvidia','GeForce RTX 4070 Ti',40,'Ti',799,849.99,12,31570,0.040),
+('GPU','AMD','Radeon RX 7900 XT',79,'XT',899,699.99,20,28900,0.024),
+('GPU','Nvidia','GeForce RTX 4070',40,'None',549,589.99,12,26959,0.034),
+('GPU','AMD','Radeon RX 7800 XT',78,'XT',499,519.99,16,24207,0.021),
+('GPU','Nvidia','GeForce RTX 4060 Ti',40,'Ti',399,325.00,8,22608,0.014),
+('GPU','AMD','Radeon RX 7700 XT',77,'XT',449,529.99,12,22448,0.024),
+('GPU','Nvidia','GeForce RTX 5060',50,'None',299,329.00,8,20660,0.016),
+('GPU','AMD','Radeon RX 9060 XT',90,'XT',349,430.00,16,20088,0.021),
+('GPU','Nvidia','GeForce RTX 4060',40,'None',299,299.99,8,19700,0.015),
+('GPU','AMD','Radeon RX 7600',76,'None',269,259.99,8,16611,0.016);</sql><sql name="New column names ">SELECT Full_Model_Name, Brand, Current_Street_Price, G3D_Mark,
+       ROUND(Current_Street_Price / G3D_Mark, 4) AS price_per_mark
+FROM hardware_data
+ORDER BY price_per_mark ASC;</sql><sql name="SQL 9">SELECT Brand, ROUND(AVG(Price_per_Mark), 4) AS avg_price_per_mark
+FROM hardware_data
+GROUP BY Brand;</sql><sql name="SQL 10">SELECT Full_Model_Name, Brand, Current_Street_Price, VRAM_GB, Price_per_Mark
+FROM hardware_data
+ORDER BY Price_per_Mark ASC
+LIMIT 5;</sql><sql name="Price tier">SELECT
+    CASE WHEN Current_Street_Price &lt;= 350 THEN 'Budget'
+         WHEN Current_Street_Price &lt;= 700 THEN 'Mid-range'
+         ELSE 'High-end' END AS Price_Tier,
+    Brand,
+    ROUND(AVG(Price_per_Mark), 4) AS avg_price_per_mark
+FROM hardware_data
+GROUP BY Price_Tier, Brand
+ORDER BY MIN(Current_Street_Price);</sql><sql name="SQL 12">SELECT brand, COUNT(*) AS gpus FROM gpu_benchmarks_clean GROUP BY brand;</sql><sql name="Remove nulls and fixed price">CREATE TABLE gpu_benchmarks_clean AS
+SELECT
+    gpuName,
+    brand,
+    testDate AS test_year,
+    CASE WHEN category LIKE '%Workstation%' THEN 'Workstation'
+         WHEN category LIKE '%Desktop%' THEN 'Desktop'
+         WHEN category LIKE '%Mobile%' THEN 'Mobile'
+         ELSE 'Unspecified' END AS category,
+    CAST(G3Dmark AS INTEGER) AS g3d_mark,
+    CAST(price AS REAL) AS price,
+    ROUND(CAST(price AS REAL) / CAST(G3Dmark AS REAL), 4) AS price_per_mark
+FROM gpu_benchmarks_raw
+WHERE brand IN ('NVIDIA', 'AMD')
+  AND price IS NOT NULL
+  AND TRIM(price) &lt;&gt; ''
+  AND CAST(price AS REAL) &lt;= 3000
+  AND G3Dmark &gt; 0;</sql><sql name="Clean comparison">SELECT 'Raw rows' AS stage, COUNT(*) AS gpus FROM gpu_benchmarks_raw
+UNION ALL
+SELECT 'NVIDIA or AMD only', COUNT(*) FROM gpu_benchmarks_raw
+  WHERE brand IN ('NVIDIA', 'AMD')
+UNION ALL
+SELECT 'Has a price', COUNT(*) FROM gpu_benchmarks_raw
+  WHERE brand IN ('NVIDIA', 'AMD') AND price IS NOT NULL AND TRIM(price) &lt;&gt; ''
+UNION ALL
+SELECT 'After removing outliers', COUNT(*) FROM gpu_benchmarks_clean;</sql><sql name="SQL 17">SELECT test_year, brand, COUNT(*) AS gpus,
+       ROUND(AVG(price_per_mark), 3) AS avg_price_per_mark
+FROM gpu_benchmarks_clean
+GROUP BY test_year, brand
+HAVING COUNT(*) &gt;= 10
+ORDER BY test_year, brand;</sql><sql name="New table gpu_metadata_clean">CREATE TABLE gpu_metadata_clean AS
+SELECT Name AS gpu_name,
+       CASE WHEN Name LIKE 'GeForce%' THEN 'NVIDIA' ELSE 'AMD' END AS brand,
+       CAST(REPLACE(Wattage, 'W', '') AS INTEGER) AS watts,
+       CAST(REPLACE(VRAM, 'GB', '') AS INTEGER) AS vram_gb,
+       CAST(&quot;3DMARK&quot; AS INTEGER) AS threedmark
+FROM gpu_metadata_raw;</sql><sql name="New table gpu_price_history_clean">CREATE TABLE gpu_price_history_clean AS
+SELECT Name AS gpu_name,
+       '20' || substr(Date, 7, 2) || '-' || substr(Date, 4, 2) || '-' || substr(Date, 1, 2) AS price_date,
+       NULLIF(CAST(&quot;Retail Price&quot; AS INTEGER), 0) AS retail_price,
+       NULLIF(CAST(&quot;Used Price&quot; AS INTEGER), 0) AS used_price
+FROM gpu_price_history_raw;</sql><sql name="SQL 20">SELECT m.gpu_name, m.brand, m.vram_gb, h.retail_price, h.used_price,
+       ROUND(h.retail_price * 1.0 / m.threedmark, 4) AS retail_per_mark,
+       ROUND((h.retail_price - h.used_price) * 100.0 / h.retail_price, 0) AS used_saving_pct
+FROM gpu_metadata_clean m
+JOIN gpu_price_history_clean h ON m.gpu_name = h.gpu_name
+WHERE h.price_date = '2024-12-01'
+ORDER BY retail_per_mark ASC
+LIMIT 20;</sql><sql name="Budget tier comparison">SELECT
+  CASE WHEN h.retail_price &lt; 300 THEN '1. Under $300'
+       WHEN h.retail_price &lt; 600 THEN '2. $300-$599'
+       WHEN h.retail_price &lt; 1000 THEN '3. $600-$999'
+       ELSE '4. $1000+' END AS price_tier,
+  m.brand,
+  COUNT(*) AS gpus,
+  ROUND(AVG(m.vram_gb), 1) AS avg_vram_gb,
+  ROUND(AVG(h.retail_price * 1.0 / m.threedmark), 4) AS avg_price_per_mark
+FROM gpu_metadata_clean m
+JOIN gpu_price_history_clean h ON m.gpu_name = h.gpu_name
+WHERE h.price_date = '2024-12-01'
+GROUP BY price_tier, m.brand
+ORDER BY price_tier, m.brand;</sql><current_tab id="18"/></tab_sql></sqlb_project>
