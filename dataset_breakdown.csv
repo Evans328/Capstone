@@ -1,0 +1,4 @@
+Dataset,Rows before,Rows after,% of rows remaining,Cells before,Cells after,% of cells remaining,Blank cells before,Blank cells after,What changed,Programs used
+GPU benchmarks,2317,506,22%,23170,3542,15%,6778,0,"Kept NVIDIA and AMD only, kept rows with a price, removed workstation cards over $3,000, added price per point.",SQL in DB Browser
+Price history and specs,1087,1087,100%,4540,13044,287%,0,382,"No rows removed. Zeros became blanks, units were stripped, dates were converted, the two Kaggle files were joined.","SQL in DB Browser, then Python (pandas)"
+My GPU data,16,16,100%,160,160,100%,0,0,"Nothing removed. Price per point recalculated, and the RTX 4070 launch price fixed from $549 to $599.","Python, Excel and SQL"

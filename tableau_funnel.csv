@@ -1,0 +1,5 @@
+Stage,Rows
+1 Raw rows,2317
+2 NVIDIA or AMD only,1926
+3 With a price,513
+4 After removing outliers,506

@@ -1,0 +1,9 @@
+Component_Type,Brand,Full_Model_Name,Price,Cores,Threads,TDP_W,CPU_Mark,Notes
+CPU,AMD,Ryzen 7 9800X3D,449.0,8,16,120,39977,Best-in-class gaming CPU (3D V-Cache); CPU Mark understates its gaming performance
+CPU,AMD,Ryzen 7 7800X3D,349.00,8,16,120,34278,"My CPU. Price is a mid-2026 range of $320 to $375 (I use $349). PassMark CPU Mark, 6 Sept 2026. About 8% behind the 9800X3D in games at 1080p and about 3% at 1440p"
+CPU,Intel,Core Ultra 9 285K,579.0,24,24,125,67300,Wins CPU Mark (multi-core work) but is about 24% slower than the 9800X3D in 1080p gaming
+CPU,AMD,Ryzen 7 9700X,303.0,8,16,65,37049,
+CPU,Intel,Core Ultra 7 265K,315.0,20,20,125,58678,
+CPU,AMD,Ryzen 5 7600,199.0,6,12,65,26977,
+CPU,Intel,Core i5-14600K,210.0,14,20,125,38449,
+CPU,AMD,Ryzen 7 3800X,329.0,8,16,105,24463,"My current CPU (2019, Zen 2, no 3D V-Cache)"

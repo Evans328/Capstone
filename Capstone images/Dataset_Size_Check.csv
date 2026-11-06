@@ -1,0 +1,8 @@
+Dataset,Source,Used for,Rows,Columns,Cells,Blank cells,Non-blank cells,"Meets 1,000 minimum (cells)","Meets 1,000 minimum (rows)"
+GPU_benchmarks_v7.csv,Kaggle (public),"Main historical dataset: GPU price and performance, 2009 to 2022",2317,10,23170,6778,16392,Yes,Yes
+gpu_price_history.csv,Kaggle (public),"Monthly retail and used prices, Nov 2022 to Dec 2024",1087,4,4348,0,4348,Yes,Yes
+gpu_price_history_tableau.csv,Derived: cleaned and joined in SQL/Python,Tableau charts (price history joined to specs),1087,12,13044,382,12662,Yes,Yes
+gpu_benchmarks_clean (SQL table),Derived: SQL cleaning of GPU_benchmarks_v7,Tier and trend queries after filtering,506,7,3542,0,3542,Yes,No
+gpu_metadata.csv,Kaggle (public),"Specs: VRAM, wattage, 3DMark score",48,4,192,0,192,No,No
+hardware_data.csv,Compiled by you,"Current-generation GPUs, September 2026 prices",16,10,160,0,160,No,No
+cpu_data.csv,Compiled by you,CPU comparison (AMD vs Intel),6,13,78,20,58,No,No

@@ -1,0 +1,4 @@
+card,vram_gb,price_low_usd,price_high_usd,g3d_mark,price_per_point_low,price_per_point_high,g3d_source,price_sources_and_notes
+RTX 5060 Ti 16GB,16,560,805,22623,0.0248,0.0356,"PassMark G3D Mark, 17 July 2026 (videocardbenchmark.net)","$560: PassMark price listing, July 2026. About $750: a retailer listing, June 2026. $805: a reported US median price (secondary report, undated). MSRP $429."
+RTX 5090,32,4150,4200,38950,0.1065,0.1078,"PassMark G3D Mark, June 2026 (about 38,950)","About $4,200: PassMark price listing, 11 June 2026. About $4,150: implied by PassMark value figures, July to August 2026."
+Intel Arc B580,12,249,369,16025,0.0155,0.023,"PassMark G3D Mark, 17 to 18 July 2026 (about 16,025)","$249: launch price and PassMark-implied price, July 2026. $369: TechSpot price history, current as of 9 June 2026."
